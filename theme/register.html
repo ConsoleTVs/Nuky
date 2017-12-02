@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - Nuky</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css">
+</head>
+<body>
+    <div class="body--background"></div>
+    <div class="header--background--full uk-box-shadow-medium"></div>
+    <div class="uk-section uk-section-large">
+        <div class="uk-container">
+            <div uk-grid>
+                <div class="uk-width-1-1@s uk-width-1-6@m uk-width-1-4@l"></div>
+                <div class="uk-width-1-1@s uk-width-2-3@m uk-width-1-2@l">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-header">
+                            <center>
+                                <div class="card-title">Register to <b>Nuky</b></div>
+                            </center>
+                        </div>
+                        <div class="uk-card-body">
+                            <form method="POST" class="uk-form-stacked">
+                                <div class="uk-margin">
+                                    <div class="uk-position-relative">
+                                        <span class="uk-form-icon mdi mdi-account"></span>
+                                        <input class="uk-input" type="text" name="name" placeholder="Full name">
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <div class="uk-position-relative">
+                                        <span class="uk-form-icon mdi mdi-email"></span>
+                                        <input class="uk-input" type="text" name="email" placeholder="Email adress">
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <div class="uk-position-relative">
+                                        <span class="uk-form-icon mdi mdi-lock"></span>
+                                        <input class="uk-input" type="password" name="password" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <div class="uk-position-relative">
+                                        <span class="uk-form-icon mdi mdi-lock"></span>
+                                        <input class="uk-input" type="password" name="password_confirmation" placeholder="Repeat Password">
+                                    </div>
+                                </div>
+                                <div class="uk-margin-medium-top">
+                                    <center>
+                                        <button stype="submit" class="uk-button uk-button-primary">Register</button>
+                                        <p class="uk-margin-remove-bottom">Already have an account? <a href="login.html">Login</a></p>
+                                    </center>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-1@s uk-width-1-6@m uk-width-1-4@l"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/theme.js"></script>
+</body>
+</html>

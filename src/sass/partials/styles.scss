@@ -1,0 +1,169 @@
+html, body {
+    height: 100%;
+    min-height:100%;
+}
+.space-text,
+.uk-button,
+.uk-form-label,
+.uk-breadcrumb,
+.uk-nav-default,
+.uk-navbar-nav,
+.uk-navbar-nav > li,
+.card-title {
+    list-style: none;
+    padding: none;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.uk-tab > li {
+    font-weight: 600;
+}
+.uk-nav > li.active {
+    position: relative;
+    border-left: $nuky-menu-active-border solid #9E9E9E;
+}
+.uk-nav > li.active > a {
+    color: #666;
+    font-weight: bold;
+    margin-left: -$nuky-menu-active-border;
+}
+.uk-label {
+    text-transform: capitalize;
+}
+.uk-overflow-auto::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+    background-color: #FAFAFA;
+}
+.uk-overflow-auto::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: #FAFAFA;
+}
+.uk-overflow-auto::-webkit-scrollbar-thumb {
+    background-color: #FFFFFF;
+}
+.body--background {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -11;
+    background-color: #FAFAFA;
+}
+.background {
+    background: $global-primary-background; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, $global-primary-background, $global-secondary-background); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, $global-primary-background, $global-secondary-background); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, $global-primary-background, $global-secondary-background); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, $global-primary-background, $global-secondary-background); /* Standard syntax */
+}
+.header--background {
+    @extend .background;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 405px;
+    z-index: -10;
+}
+.header--background--full {
+    @extend .background;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+.uk-label-secondary {
+    background-color: $global-secondary-background;
+}
+.social, .social:hover, .social:visited {
+    font-size: 50px;
+    text-decoration: none;
+    color: $global-secondary-background;
+}
+.turbolinks-progress-bar {
+  height: 4px;
+  background-color: $global-secondary-background;
+}
+.feature {
+    font-size: 75px;
+    color: $global-primary-background;
+}
+.title,
+.subtitle {
+    font-weight: 300;
+}
+.card-title {
+    font-size: 14px;
+}
+.uk-nav-default {
+    font-size: 13px;
+}
+.card-right {
+    position: relative;
+}
+.card-right-icons {
+    position: absolute;
+    font-size: 22px;
+    top: -5px;
+    width: 100%;
+}
+.card-icon,
+.card-icon:hover,
+.card-icon:visited {
+    padding: 0px 0px 0px 10px;
+    color: inherit;
+    text-decoration: none;
+}
+.icon-size {
+    font-size: 2em;
+}
+.uk-form-label {
+    color: grey;
+}
+.statistic {
+    font-size: 2.5em;
+    display: block;
+}
+.statistic-title {
+    @extend .space-text;
+    font-size: 0.75em;
+    display: block;
+}
+.input-header {
+    margin-top: 0px;
+    padding-top: 3px;
+    margin-bottom: 0px;
+    padding-bottom: 3px;
+}
+.input-header-padder {
+    padding-top: 20px;
+}
+.small-text-large-input {
+    font-size: 1.15em;
+    padding: 0px 0px 0px 0px !important;
+}
+.invisible-input {
+    border: none;
+    outline: none;
+}
+.uk-label {
+    @extend .uk-text-uppercase;
+}
+.user-avatar {
+    @extend .uk-border-circle;
+    width: 100px;
+}
+.user-name {
+    @extend .space-text;
+    padding-top: 10px;
+    display: block;
+    font-size: 1em;
+}
+.user-sub {
+    @extend .space-text;
+    padding-top: 10px;
+    display: block;
+    font-size: 0.8em;
+}
